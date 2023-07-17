@@ -10,16 +10,16 @@ const state = reactive({
 });
 
 const addition = () => {
-    state.result = state.firstNumber + state.secondNumber;
+    state.result = parseFloat(state.firstNumber) + parseFloat(state.secondNumber);
 }
 const subtraction = () => {
-    state.result = state.firstNumber - state.secondNumber;
+    state.result = parseFloat(state.firstNumber) - parseFloat(state.secondNumber);
 }
 const multiplication = () => {
-    state.result = state.firstNumber * state.secondNumber;
+    state.result = parseFloat(state.firstNumber) * parseFloat(state.secondNumber);
 }
 const division = () => {
-    state.result = state.firstNumber / state.secondNumber;
+    state.result = parseFloat(state.firstNumber) / parseFloat(state.secondNumber);
 }
 
 const getOperation = () => {
